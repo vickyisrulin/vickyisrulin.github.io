@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Market - Cart</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.header {
+    width:100%; 
+    text-align:center;
+}
+
+.flex-container {
+  display: flex;
+  
+  flex-wrap: wrap;
+  align-items: center;
+vertical-align: middle;
+}
+
+.flex-container > div {
+
+  flex: 50%;
+  max-width: 50%;
+  
+
+  
+  margin: 2px 20px 10px 20px;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+.all-products {
+    text-align:left;
+}
+.pdp-image {
+  width:100%;
+    height:200px;
+    margin: 2px 20px 10px 0;
+    align-content: left;
+}
+.sku-label{
+  text-align:left;
+    font-size:12px;
+    padding-top:10px;
+    padding-right: 10px;
+    color: #616161;
+    width: 20%;
+}
+#sku-label-text {
+    text-align:left;
+    font-size:10px;
+    padding-top:10px;
+    color: #616161;
+    width:50%;
+}
+
+.remove {
+
+}
+.qty-line {
+
+}
+
+.price {
+
+}
+
+.wm-update-btn {
+    align-content:left;
+    padding-top: 10px;
+    padding-left: 20px
+}
+
+.pick-up-store {
+
+}
+#border_qty {
+    border: 3px solid rgba(37,37,37,0.12);
+}
+
+#no_border_qty {
+    border: 3px solid transparent;
+}
+
+
+.checkout-btn {
+    height: 34px;
+    line-height: 34px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #196d79;
+    padding: 0 36px;
+    color: #fff;
+    outline-offset: -3px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+#productnameFont{
+
+
+}
+
+.pdp-button-update-basket {
+    line-height: 50px;
+    margin-top: 15px;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.footer {
+  float: left;
+}
+.pdp-title {
+  font-family: Georgia, serif;
+font-size: 25px;
+color: #000000;
+font-weight: 900;
+text-decoration: none;
+font-style: normal;
+width: 50%;
+margin: 2px 20px 10px 0;
+}
+
+.ml-button-checkout:hover, ml-button-checkout:active   {
+   background-color: #196d79;
+   width:"100%"
+   text-align="center"
+}
+#pick-up-store {
+font-family: Georgia, serif;
+font-size: 20px;
+letter-spacing: 0.4px;
+word-spacing: 0.4px;
+color: #000000;
+font-weight: 700;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .flex-container {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .qty-box {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .header, .flex-container, .qty-box, .footer {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana">
+
+<div class="header"itemprop="name" style="width:100%; text-align:center">
+    <div>
+        <div>Cart</div>
+
+        <br>
+        <div id="pick-up-store">
+            Store: San Francisco  
+        </div>  
+     <br> 
+     ____________________________________
+     <br>
+     <br>
+
+
+     <a href="" target="_blank">Continue Shopping</a>
+  </div>
+</div>
+
+<div class="wm-checkout">
+     <input type="button" name="addToBasket" class="checkout-btn" value="Commit to buy" aria-describedby="ml-product-unavailable-dialogue-block">
+</div>
+
+<div class="flex-container">
+  
+
+
+    <div class="pdp-image"> 
+       <img src="http://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/82823_XXX_v1.tif&wid=200&cvt=jpeg" >
+   </div>
+   
+   
+<div>
+   <div style="font-size:20px;text-align: center;width:40px">Live Edge Wood Sansur Dining Table</div>
+      <div> SKU
+        <br>
+        <span> #566665  </span>
+      </div>  
+      <div> QTY - 1 </div>
+  </div>            
+                
+   
+  </div>
+
+
+<!-- This is a QTY row -->
+
+<div class="qty-box"style="padding-top:20px;align-content:left;padding-left: 50px">
+    
+
+<div style="padding-top:20px;align-content:left;padding-left: 50px">    
+        <div class ="qty" style="width:100%;align-content: left;padding-top:10px">
+                <div>
+                                                      <div class="ml-numeric-spinner-wrapper">
+                                                        <div class="input-group"><span class="input-group-btn" >
+                                                          <button id="no_border_qty" type="button">
+                                                            <span class="ml-icon-lib ml-icon-minus"></span>
+                                                            <span class="ml-srOnly-content">-</span>
+                                                          </button></span>
+                                                          <label for="qty_156006">
+                                                            <input type="text" class="form-control ml-numeric-spinner" id="border_qty" name="qty" value="1" size="3" maxlength="3" style="text-align:center">
+                                                            <span class="area-label-hidden"></span></label>
+                                                            <span class="input-group-btn"></span>
+                                                              <button id="no_border_qty" type="button">
+                                                                <span class="ml-icon-lib ml-icon-plus"></span>
+                                                                <span class="ml-srOnly-content">+</span>
+                                                              </button>
+                                                            </span>
+                                                            
+                                                          </div>
+                                                        </div>
+                                                        
+                                                        </div>                     
+                                            
+    </div>
+    <br>
+
+    <div class="wm-update-btn" >
+            <a href="" target="_blank">Update</a>
+          </div>
+</div>
+
+</div>
+          <div itemprop="name" style="width:100%; text-align:center">
+                <div>
+                    <div></div>
+        
+                 <br> 
+               ____________________________________
+               
+              </div>
+            
+            </div>
+
+
+
+</body>
+</html>
