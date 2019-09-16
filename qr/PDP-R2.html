@@ -10,31 +10,58 @@
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  width: 100%;
-  height: 30px;
+   
+    align-items: center;
+    flex-direction: column;
+    margin:5px;
+    
 }
 
 .flex-container > div {
   /*background-color:#fff;*/
-  width: 40%;
-  text-align: center;
-  line-height: 19px;
-  
+  flex: 0 0 20vw;
+  width: 100%;
+  line-height: 10px;
+  margin: 2px 0 10px 20px;
+  align-items: center;
+  line-height: 14px;
 
 }
 
 .header-logo {
-  
   background-color:#fff;
+  margin: 10px;
+  justify-content: center;
+}
 
+
+/* WMKT header logo */
+.header-logo img {
+  
+  align-items: center;
+  
   
 }
+/* My Store Text*/
+#my-store-label {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+width: 50%;
+background-color:#878787;
+color: #FFFFFF;
+font-weight: 7  00;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+
+}
+
+/* Walnut Creek - label */
 #my-store-header {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 12px;
-
+width:50%;
 background-color:#878787;
 color: #FFFFFF;
 font-weight: 400;
@@ -45,34 +72,7 @@ text-transform: uppercase;
 line-height: 14px;
 }
 
-#my-store-label {
-  font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
 
-background-color:#878787;
-color: #FFFFFF;
-font-weight: 400;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: uppercase;
-line-height: 14px;
-}
-
-     
-
-.ml-icon.ml-icon-caret-down {
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    cursor: pointer;
-    color: #fff;
-    padding-left: 2px;
-}
 
 #my-cart {
 font-family: Arial, Helvetica, sans-serif;
@@ -89,8 +89,6 @@ margin-left: 1px;
 text-align: center;
 justify-content: stretch;
 padding: 6px;
-
-
 }
 
 .product {
@@ -107,13 +105,7 @@ padding: 6px;
     text-transform: uppercase;
     text-align: center;
 }
-.right {
-  background-color: #f1f1f1;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
+
 .btn {
     display: inline-block;
     margin-bottom: 0;
@@ -148,11 +140,13 @@ text-transform: none;
 
 }
 #border_qty {
-    border: 3px solid rgba(37,37,37,0.12);
+    border: 3px;
+    background: white;
 }
 
 #no_border_qty {
-    border: 3px solid transparent;
+  border: none;
+  color: black;
 }
 
 .btn-default {
@@ -191,9 +185,7 @@ text-transform: none;
     width: 80%;
     padding: 0;
   }
-  .right {
-    width: 100%;
-  }
+
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -210,7 +202,7 @@ text-transform: none;
     
     <div class="header-logo">
         
-<img style = "width: 100%; float: left; margin: 2px 20px 10px 0; ; " src="https://worldmarket-v162-rev.aws.marketlive.com/images/worldmarket/en_us/global/globalnav/2019/logo01.png"  alt="" height="30"  /> 
+      <img src="https://worldmarket-v162-rev.aws.marketlive.com/images/worldmarket/en_us/global/globalnav/2019/logo01.png"/> 
 
     </div>
 
@@ -219,13 +211,11 @@ text-transform: none;
             
             <div id="my-store-label" >
              My Store:
-            </div>
+           
              <div id="my-store-header">
                 Walnut Creek
              </div>
-            
-              <class="ml-icon-caret-down">
-
+            </div>
           </div>
 
           
@@ -238,8 +228,7 @@ text-transform: none;
                     </a>
               </div>      
           
-  </div>
-  </div>
+  </div>  
 
 
 
@@ -250,7 +239,7 @@ text-transform: none;
 
 
   <div class="product">
-    <img style = "width: 100%; float: right; margin: 2px 0 10px 20px;border:1px solid black;" src="http://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/82823_XXX_v1.tif&wid=200&cvt=jpeg"  alt="sofa" height="340" /> 
+    <img style = "width: 100%; float: right; margin: 2px 0 10px 20px;" src="http://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/82823_XXX_v1.tif&wid=200&cvt=jpeg"  alt="sofa" height="340" /> 
 	
 	<div id="ml-product-name" itemprop="name" style="width:100%; text-align:center">
 		Live Edge Wood Sansur Dining Table

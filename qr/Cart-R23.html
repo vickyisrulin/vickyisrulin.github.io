@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cost Plus - World Market : MY LIST</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.header-logo {
+    padding-bottom: 10px;
+}
+
+.header-logo img {
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+   width: 40%;
+  max-width: 400px;
+  height: auto;
+}
+
+.container { 
+  display: flex;
+  text-align: center;
+  line-height: 2vw;
+  text-align: center;
+  
+  }
+
+.container div {
+    flex: 1;  
+    color: white;
+    margin-top: .5em;
+
+
+}
+.my-store-label {
+    padding: .5em;
+    font-size: 5vw;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1px;
+}
+.my-list-label {
+    padding-top: 1em;  
+    font-size: 5vw;
+  background: gray;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.store-text {
+    font-size: 3.25vw;
+    padding-top: .5em;
+    text-transform: uppercase; 
+}
+.my-list-top {
+    padding-top: 1em;  
+    font-size: 5vw;
+  background: white;
+  color:#196d79; /* Green */
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+}
+
+.continue-shopping-label {
+    padding-top: 1em;  
+    font-size: 3.5vw;
+  background: white;
+  color: blue;
+  text-decoration: underline solid blue;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 1em;
+  
+}
+
+.container-products{
+    display: flex;
+  
+  padding-top: 1px;
+  
+}
+
+.container-products > div {
+    flex: 1;  
+    color: white;
+    margin-top: .5em;
+    flex-direction: column;
+    line-height: 5px;
+    padding-top: 10px;
+}
+
+.product-image > img {
+    display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+  height: auto;
+}
+
+.product-title {
+
+font-family: Sentinel-Bold;
+font-size: 6.3vw;
+letter-spacing: 0px;
+word-spacing: 0.2px;
+color: #262626;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+text-align: center;
+line-height: 11vw;
+}
+
+.sku-label {
+    
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 5px;
+    color: grey;
+}  
+.qty-area {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;   
+   width: 100%;
+   height: 5px;
+   padding: 10px 24px;
+   
+    
+}
+.ml-icon-lib {
+  
+  border: none;
+  color: pink;
+  padding: 1px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 4px;
+}
+
+#border_qty {
+    border: none;
+    background: white;
+}
+
+#no_border_qty {
+  border: none;
+  color: black;
+  background: white;
+}
+.ml-numeric-spinner-wrapper {
+background:white;
+border: 1px solid rgba(37,37,37,0.12);
+align-self: center;
+}
+.ml-icon-minus {
+    line-height: 1;
+    align-self: center;
+
+}
+
+.remove-label { 
+    color: blue;
+    text-decoration: underline solid blue;
+    padding-top:10px;
+    text-align: center
+}
+.update-label { 
+    color: blue;
+    text-decoration: underline solid blue;
+    padding-top:15px;
+    text-align: center
+}
+
+.center-list-button {
+    padding-top: 20px;
+    justify-content: center
+}
+.add-to-cart-button {
+    background-color: #196d79; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 7vw;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  
+}
+
+
+</style>
+</head>
+<body style="font-family:Verdana">
+
+    
+    <div class="header-logo">
+        
+        <img src="https://worldmarket-v162-rev.aws.marketlive.com/images/worldmarket/en_us/global/globalnav/2019/logo01.png" 
+        -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+            filter: blur(5px);/> 
+  
+      </div>
+
+      <div class = "container">
+            <div class="my-store-label">
+                
+                  MY STORE    
+                  <div class="store-text"> 
+                          Los ANgeles (Market) 
+                  </div>
+            </div>
+                  <div class="my-list-label"> 
+                
+      
+                 My List (1)
+                      
+            </div>
+          </div>
+
+
+          
+          <div class="continue-shopping-label"> 
+            continue shopping
+          </div>
+
+          <div class = "container-products">
+                <div class="product-image">
+                        <img src= "http://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/82823_XXX_v1.tif&cvt=jpeg">
+                        <div class="remove-label">
+                            Remove
+                        </div>
+          </div>
+
+          <div class="product-details">
+              <div class="product-title">
+                    Live Edge Wood Sansur Dining Table
+              </div>
+              <div class="sku-label"> 
+                    SKU#
+                    <span> 566665</span>
+                </div>
+                <div class ="qty-area">
+                        <div>
+                                                              <div class="ml-numeric-spinner-wrapper">
+                                                                <div class="input-group"><span class="input-group-btn" >
+                                                                  <button id="no_border_qty" type="button">
+                                                                    <span class="ml-icon-lib ml-icon-minus"></span>
+                                                                    <span class="ml-srOnly-content">-</span>
+                                                                  </button></span>
+                                                                  <label for="qty_156006">
+                                                                    <input type="text" class="form-control ml-numeric-spinner" id="border_qty" name="qty" value="1" size="3" maxlength="3" style="text-align:center">
+                                                                      
+                                                                    <span class="area-label-hidden"></span></label>
+                                                                    <span class="input-group-btn"></span>
+                                                                      <button id="no_border_qty" type="button">
+                                                                        <span class="ml-icon-lib ml-icon-plus"></span>
+                                                                        <span class="ml-srOnly-content">+</span>
+                                                                      </button>
+                                                                    </span>
+                                                                  </div>
+                                                                  
+                                                                </div>
+                                                              </div>
+                      </div>
+                      <div class="update-label">
+                            Update
+                        </div>
+          </div>
+          
+        </div>
+
+        <br> 
+        <div class="line-breaker" style = "text-align: center">
+                ________________________________
+        </div>
+        <div class = "container-products">
+                <div class="product-image">
+                        <img src= "https://ii3.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/87956_XXX_v1.tif&cvt=jpeg">
+                        <div class="remove-label">
+                            Remove
+                        </div>
+          </div>
+
+          <div class="product-details">
+              <div class="product-title">
+                    Round Black Wood Keanu Dining Table
+              </div>
+              <div class="sku-label"> 
+                    SKU#
+                    <span> 574133</span>
+                </div>
+                <div class ="qty-area">
+                        <div>
+                                                              <div class="ml-numeric-spinner-wrapper">
+                                                                <div class="input-group"><span class="input-group-btn" >
+                                                                  <button id="no_border_qty" type="button">
+                                                                    <span class="ml-icon-lib ml-icon-minus"></span>
+                                                                    <span class="ml-srOnly-content">-</span>
+                                                                  </button></span>
+                                                                  <label for="qty_156006">
+                                                                    <input type="text" class="form-control ml-numeric-spinner" id="border_qty" name="qty" value="1" size="3" maxlength="3" style="text-align:center">
+                                                                      
+                                                                    <span class="area-label-hidden"></span></label>
+                                                                    <span class="input-group-btn"></span>
+                                                                      <button id="no_border_qty" type="button">
+                                                                        <span class="ml-icon-lib ml-icon-plus"></span>
+                                                                        <span class="ml-srOnly-content">+</span>
+                                                                      </button>
+                                                                    </span>
+                                                                  </div>
+                                                                  
+                                                                </div>
+                                                              </div>
+                      </div>
+                      <div class="update-label">
+                            Update
+                        </div>
+          </div>
+          
+        </div>
+
+        <div class = "center-list-button">
+                <button class="add-to-cart-button">Commit to Buy</button><br>
+            </div>
+          
+
+    </body>
+
+</html>
